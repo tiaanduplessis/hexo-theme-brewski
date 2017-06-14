@@ -1,0 +1,9 @@
+.copyright
+    - var currentDate = new Date();
+    - var currentYear = currentDate.getFullYear();
+    - var copyrightYear = ! theme.copyright.since || currentYear == theme.copyright.since ? currentYear : theme.copyright.since + ' - ' + currentYear;
+    - var copyrightURL = theme.copyright.url || config.url
+    - var copyrightName = theme.copyright.name || config.author
+    p &copy; #{copyrightYear} #[a(href=copyrightURL) #{copyrightName}]
+        br
+        | Powered by #[a(href='https://hexo.io/', rel='noreferrer', target='_blank') Hexo]

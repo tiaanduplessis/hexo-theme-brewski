@@ -1,0 +1,19 @@
+{
+  "name": "hexo-theme-brewski",
+  "version": "1.0.0",
+  "description": "A minimal Hexo theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiaanduplessis/hexo-theme-brewski"
+  },
+  "keywords": [
+    "hexo",
+    "theme"
+  ],
+  "author": "Tiaan du Plessis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tiaanduplessis/hexo-theme-brewski/issues"
+  },
+  "homepage": "https://github.com/tiaanduplessis/hexo-theme-brewski#readme"
+}

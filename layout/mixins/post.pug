@@ -1,0 +1,59 @@
+mixin postInfo(item)
+    .post-info
+        a
+        != full_date(item.date, config.date_format)
+        if item.from && (is_home() || is_post())
+            a.post-from(href=item.from, target='_blank', title=item.from)
+                != __('translate_original')
+
+mixin postTitle(title)
+    if title
+        != title
+    else
+        != __('untitled')
+
+//- Index Page
+mixin posts()
+    ul.home.post-list
+        - page.posts.each(function (item) {
+            li.post-list-item
+                article.post-block
+                    h2.post-title
+                        a.post-title-link(href=url_for(item.path))
+                            +postTitle(item.title)
+                    +postInfo(item)
+                    .post-content
+                        != item.excerpt
+                    a.read-more(href=url_for(item.path))
+                        != __('read_more')
+        - })
+
+//- Archive Page
+mixin postList()
+    .archive
+        - var year = 0;
+        - var change = false;
+        - page.posts.each(function (item) {
+            - var itemYear = date(item.date, 'YYYY') - 0;
+            - change = year !== itemYear;
+            - year = change ? itemYear : year;
+            if change
+                h2.archive-year
+                    != year
+            .post-item
+                +postInfo(item)
+                a.post-title-link(href=url_for(item.path))
+                    +postTitle(item.title)
+        - })
+
+
+
+//- Post Page
+mixin post(item)
+    .post
+        article.post-block
+            h1.post-title
+                +postTitle(item.title)
+            +postInfo(item)
+            .post-content
+                != item.content
