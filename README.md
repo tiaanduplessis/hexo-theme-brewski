@@ -4,9 +4,6 @@
   <strong>A minimal Hexo theme</strong>
 </div>
 <div align="center">
-  <a href="https://github.com/tiaanduplessis/hexo-theme-brewski/blob/master/LICENSE">
-    <img src="https://img.shields.io/npm/l/hexo-theme-brewski.svg?style=flat-square" alt="project license" />
-  </a>
   <a href="http://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="make a pull request" />
   </a>
@@ -48,7 +45,6 @@ A minimal theme based on and hacked from [artemis](https://github.com/Dreyer/hex
 ```
 git clone https://github.com/tiaanduplessis/hexo-theme-brewski.git themes/brewski
 ```
-
 ### Usage
 
 Modify `theme` setting in `_config.yml` to `brewski`.
