@@ -42,9 +42,21 @@ A minimal theme based on and hacked from [artemis](https://github.com/Dreyer/hex
 
 ### Install
 
+From your Hexo project root directory:
+
+Copy the theme into your `themes` sub-directory:
+
+```sh
+$ git clone https://github.com/tiaanduplessis/hexo-theme-brewski.git themes/brewski
 ```
-git clone https://github.com/tiaanduplessis/hexo-theme-brewski.git themes/brewski
+
+Install the needed dependencies:
+
+```sh
+$ npm install --save hexo-renderer-pug hexo-generator-feed hexo-generator-sitemap
 ```
+
+
 ### Usage
 
 Modify `theme` setting in `_config.yml` to `brewski`.
