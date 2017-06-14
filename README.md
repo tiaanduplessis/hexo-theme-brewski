@@ -38,7 +38,7 @@
 
 ## About
 
-A minimal theme based on and hacked from [artemis](https://github.com/Dreyer/hexo-theme-artemis).
+A minimal theme based on and hacked from [artemis](https://github.com/Dreyer/hexo-theme-artemis). Check out the demo [here](https://tiaanduplessis.github.io/hexo-theme-brewski-demo/).
 
 ### Install
 
