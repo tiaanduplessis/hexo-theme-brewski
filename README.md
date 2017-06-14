@@ -67,7 +67,7 @@ You can override the theme options using `theme_config` in the main `_config.yml
 theme: brewski
 theme_config:
   logo:
-  google_analytics: UA-12345678-9
+  google_analytics: UA-XXXXXXXX-X
   copyright:
     since: 2016
     name: John Doe
