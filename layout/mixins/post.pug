@@ -19,7 +19,7 @@ mixin posts()
             li.post-list-item
                 article.post-block
                     h2.post-title
-                        a.post-title-link(href=url_for(item.path))
+                        a.post-title-link(href=url_for(item.path) class="no-barba")
                             +postTitle(item.title)
                     +postInfo(item)
                     .post-content

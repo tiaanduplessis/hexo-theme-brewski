@@ -3,5 +3,6 @@ ul.nav.nav-list
         li.nav-list-item
             - var re = /^(http|https):\/\/*/gi;
             - var tar = re.test(value) ? "_blank" : "_self"
-            a.nav-list-link(href=url_for(value) target=tar)
+            - var type = value.indexOf('.html') === -1 ? 'no-barba' : ''
+            a.nav-list-link(href=url_for(value) target=tar class=type)
                 != key.toUpperCase()
