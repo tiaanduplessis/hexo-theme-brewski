@@ -27,6 +27,7 @@ ul {
 p {
   letter-spacing: -.01em;
   line-height: 1.8;
+  margin: 1.2em 0;
 }
 
 a, a:active {
@@ -160,7 +161,7 @@ header .nav-list-item a {
   margin: 2em 0;
 }
 .home.post-list .post-list-item {
-  padding: 1.5em .4em;
+  padding: 1em .4em;
   border-bottom: .05em solid #eee;
 }
 .home.post-list .post-list-item:last-child {
@@ -340,7 +341,7 @@ header .nav-list-item a {
 }
 
 .paginator {
-  margin: 4em 0;
+  margin: 2em 0;
   display: flex;
   justify-content: space-around;
 }
@@ -367,7 +368,7 @@ header .nav-list-item a {
 
 main.container {
   margin: 2em .7em;
-  min-height: 50vh;
+  min-height: 30vh;
 }
 
 @media screen and (max-width: 700px) {
