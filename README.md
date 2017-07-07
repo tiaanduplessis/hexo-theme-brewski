@@ -50,7 +50,13 @@ Copy the theme into your `themes` sub-directory:
 $ git clone https://github.com/tiaanduplessis/hexo-theme-brewski.git themes/brewski
 ```
 
-Install the needed dependencies:
+You can also add it as a submodule (plays better with CI like [travis](https://travis-ci.org)):
+
+```sh
+$ git submodule add https://github.com/tiaanduplessis/hexo-theme-brewski.git themes/brewski
+```
+
+After cloning, install the needed dependencies:
 
 ```sh
 $ npm install --save hexo-renderer-pug hexo-generator-feed hexo-generator-sitemap
@@ -81,10 +87,11 @@ theme_config:
 
 ### Update
 
+```sh
+$cd themes/brewski
+$ git pull
 ```
-cd themes/brewski
-git pull
-```
+
 
 ## Contributing
 
