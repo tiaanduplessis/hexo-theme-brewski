@@ -181,6 +181,7 @@ header .nav-list-item a {
 .home.post-list .post-content > ul {
   list-style: initial;
 }
+
 .home.post-list .read-more {
   color: #9e1900;
 }
@@ -301,6 +302,12 @@ header .nav-list-item a {
   border-left-color: #9e1900;
   border-left-width: .1em;
 }
+
+.post-content li {
+  margin-left: 1em;
+  list-style-type: disc;
+}
+
 .post-content blockquote.warning {
   border-left-color: #f0ad4e;
   border-left-width: 4px;
@@ -406,7 +413,7 @@ footer .copyright {
 }
 footer .copyright p,
 footer .copyright a {
-  padding-top: 1em;
+  padding: 1em 0;
   color: #393e46;
   font-weight: 300;
 }
