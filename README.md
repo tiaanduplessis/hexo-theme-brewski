@@ -38,6 +38,8 @@
 
 ## About
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/hexo-theme-brewski.svg)](https://greenkeeper.io/)
+
 A minimal theme based on and hacked from [artemis](https://github.com/Dreyer/hexo-theme-artemis). Check out the demo [here](https://tiaanduplessis.github.io/hexo-theme-brewski-demo/).
 
 ### Install
