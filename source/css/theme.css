@@ -53,11 +53,11 @@ h6 {
 
 .nav-list-link {
   padding-bottom: .15em;
-  border-bottom: .1em solid transparent;
+  border-bottom: .2em solid transparent;
 }
 
 .nav-list-link:hover {
-  border-bottom: .1em solid #9e1900;
+  border-bottom: .2em solid #9e1900;
   padding-bottom: .15em;
   transition: 150ms ease-in-out;
 }
@@ -153,8 +153,9 @@ header .branding {
 }
 
 .logo-image {
-  width: 4em;
+  height: 5em;
 }
+
 header .nav-list-item {
   display: inline-block;
   padding: 1em .8em;
