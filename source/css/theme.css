@@ -167,6 +167,7 @@ header .nav-list-item a {
 
 .home.post-list {
   margin: 2em 0;
+  list-style: none;
 }
 .home.post-list .post-list-item {
   padding: 1em .4em;
