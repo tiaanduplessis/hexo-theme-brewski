@@ -5,7 +5,8 @@ menu:
   Home: /
   About: /about
   Archives: /archives
-  GitHub: 
+  Impressum:
+  GitHub:
   RSS: /atom.xml
 
 favicon: /favicon.svg
@@ -20,5 +21,5 @@ google_analytics:
 # Copyright Infomation
 copyright:
   since:
-  name: 
-  url: 
+  name:
+  url:

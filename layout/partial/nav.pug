@@ -1,6 +1,7 @@
 ul.nav.nav-list
     each value, key in theme.menu
         li.nav-list-item
+            - console.log(value, key)
             - if (!value) return null
             - var re = /^(http|https):\/\/*/gi;
             - var tar = re.test(value) ? "_blank" : "_self"
