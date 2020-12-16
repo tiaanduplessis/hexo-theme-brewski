@@ -8,7 +8,7 @@ html(lang=config.language)
                 h1.branding
                     a(href=url_for(), title=config.title)
                         if theme.logo
-                            img.logo-image(src=url_for(theme.logo), alt='logo')
+                            img.logo-image(src=url_for(theme.logo), alt='@yuxxeun')
                         else
                             = config.title
                 include nav.pug
