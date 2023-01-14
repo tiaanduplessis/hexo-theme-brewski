@@ -1,12 +1,8 @@
-name: Brewski
-url: https://github.com/tiaanduplessis/hexo-theme-brewski
+name: YM
 
 menu:
   Home: /
-  About: /about
   Archives: /archives
-  Impressum:
-  GitHub:
   RSS: /atom.xml
 
 favicon: /favicon.svg
@@ -19,7 +15,7 @@ disqus:
 google_analytics:
 
 # Copyright Infomation
-copyright:
-  since:
+copyright: 
+  since: 
   name:
   url:
