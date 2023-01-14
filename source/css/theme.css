@@ -7,6 +7,20 @@ body {
     "Helvetica Neue", sans-serif;
 }
 
+article.post-block > h1.post-title {
+  font-size: 1.2rem;
+  background-color: #0b0;
+}
+div.post-content {
+border: thin solid green;
+}
+div.post-content h1 {
+  font-size: 1.2rem;
+}
+div.post-content h2 {
+  font-size: 1.1rem;
+}
+
 .wrap {
   width: 90%;
   max-width: 45em;
