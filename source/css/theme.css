@@ -8,17 +8,17 @@ body {
 }
 
 article.post-block > h1.post-title {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   background-color: #0b0;
 }
 div.post-content {
 border: thin solid green;
 }
 div.post-content h1 {
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 div.post-content h2 {
-  font-size: 1.1rem;
+  font-size: 1.1em;
 }
 
 .wrap {
@@ -205,11 +205,11 @@ header .nav-list-item a {
 .archive .post-item {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 1.5rem;
+  padding-left: 1.5em;
 }
 .archive .post-time,
 .archive .post-title-link {
-  font-size: 1rem;
+  font-size: 1em;
 }
 .archive .post-title-link {
   color: #9e1900;
@@ -238,10 +238,10 @@ header .nav-list-item a {
   margin: 1.2em 0;
 }
 .post-block .post-info span {
-  margin-left: .5rem;
+  margin-left: .5em;
 }
 .post-block .post-info a.post-from {
-  margin-left: .5rem;
+  margin-left: .5em;
   padding: .2em .3em;
   border-radius: .3em;
   font-size: .7em;
