@@ -5,8 +5,8 @@ menu:
   Archives: /archives
   RSS: /atom.xml
 
-favicon: /favicon.png
-logo: /logo.svg
+favicon: /css/favicon.png
+logo: 
 
 # Disqus shortname
 disqus:
