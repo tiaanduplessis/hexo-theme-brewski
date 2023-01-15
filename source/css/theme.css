@@ -7,8 +7,18 @@ body {
     "Helvetica Neue", sans-serif;
 }
 
-article.post-block > h1.post-title {
-  font-size: 1.2em;
+div.copyright a {
+  text-decoration: underline dashed blue;
+}
+div.copyright a::before {
+  content: " [";
+}
+div.copyright a::after {
+  content: "] ";
+}
+
+h1.post-title {
+  font-size: 1.2rem;
   background-color: #0b0;
 }
 div.post-content {
