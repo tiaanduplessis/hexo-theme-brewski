@@ -93,6 +93,50 @@ $ git pull
 ```
 
 
+## Pagination scrolling
+
+The previous/next index and post links return to the top after a completed PJAX
+transition. The reset is canceled by a later click, fragment navigation, or
+Back/Forward. Initial loads and other links do not receive an additional reset;
+Barba's existing history behavior is unchanged. If Barba cannot load, the links
+continue to work through normal browser navigation.
+
+## Tests
+
+The development fixture uses Node 24.15 or newer in the Node 24 line (or Node
+22.22.2 or newer in the Node 22 line). This is a test-tooling requirement, not a
+new requirement for consumers of the static theme.
+
+```sh
+npm ci --ignore-scripts
+npm test
+```
+
+The tests generate real long Hexo index/post pages with Hexo 8.1.2 and the Pug
+3.0.0 renderer, then exercise the theme's generated initialization with Barba
+1.0.0 in jsdom. Dependencies are development-only; no installation lifecycle
+scripts are needed for these fixtures.
+
+Layout and scroll restoration need a real browser as well. Install Playwright's
+Chromium through its normal supported setup, then run:
+
+```sh
+npm run test:browser
+```
+
+An existing Chromium can be selected with `BROWSER_EXECUTABLE=/path/to/chromium`.
+This suite uses local generated pages and a local copy of the exact Barba CDN
+version, blocking unrelated external requests. It covers index/post pagination,
+keyboard activation, a mobile viewport, anchors, Back/Forward, delayed/repeated
+clicks, failed PJAX requests, and normal navigation with or without JavaScript.
+A passing jsdom suite alone is not a substitute for this browser gate.
+
+The locked Hexo development graph currently includes the unpatched `braces`
+[GHSA-vfj7-8cjw-p6xm](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm) advisory.
+Use these fixtures only with trusted local content/patterns. The generated site
+ships none of this development graph; its existing Barba 1.0.0 CDN dependency is
+unchanged. A clean production audit is not a claim that the full graph is clean.
+
 ## Contributing
 
 Contributions are welcome!

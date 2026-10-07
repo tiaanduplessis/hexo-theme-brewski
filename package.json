@@ -15,5 +15,18 @@
   "bugs": {
     "url": "https://github.com/tiaanduplessis/hexo-theme-brewski/issues"
   },
-  "homepage": "https://github.com/tiaanduplessis/hexo-theme-brewski#readme"
+  "homepage": "https://github.com/tiaanduplessis/hexo-theme-brewski#readme",
+  "scripts": {
+    "test": "node --test test/scroll.test.cjs",
+    "test:browser": "node --test test/browser.test.cjs"
+  },
+  "devDependencies": {
+    "barba.js": "1.0.0",
+    "hexo": "8.1.2",
+    "hexo-generator-index": "4.0.0",
+    "hexo-renderer-marked": "7.0.1",
+    "hexo-renderer-pug": "3.0.0",
+    "jsdom": "30.1.1",
+    "playwright": "1.63.0"
+  }
 }
