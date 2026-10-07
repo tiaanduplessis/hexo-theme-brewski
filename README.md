@@ -103,7 +103,7 @@ Contributions are welcome!
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-Or open up [a issue](https://github.com/tiaanduplessis/form-extract/issues).
+Or open up [a issue](https://github.com/tiaanduplessis/hexo-theme-brewski/issues).
 
 ## License
 
