@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@1&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
 body {
-  color: #222831;
+  color: #000;
   font-size: calc(110% + 0.1vw);
   line-height: 1.6;
   background-color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-    "Helvetica Neue", sans-serif;
+  font-family: 'IBM Plex Serif', serif;
 }
 
 .wrap {
@@ -14,7 +18,7 @@ body {
 }
 
 ul {
-  margin: 1rem 0;
+  margin: 0.1rem 0;
 }
 
 p {
@@ -25,7 +29,7 @@ p {
 
 a,
 a:active {
-  color: #222831;
+  color: #000;
   text-decoration: none;
 }
 
@@ -36,8 +40,9 @@ h4,
 h5,
 h6 {
   letter-spacing: -.002em;
+  margin-top: 20px;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.2; 
 }
 
 ::selection {
@@ -45,22 +50,44 @@ h6 {
   background-color: #9e1900;
 }
 
+.nav-list-link {
+  display: inline-block;
+}
+
+.nav-list-link:after {
+  content: '';
+  display: block;
+  background-color: transparent;
+  width: 0;
+  height: 2px;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.nav-list-link:hover:after {
+  width: 100%;
+  background: navy;
+}
+
 .nav-list {
+  font-family: 'IBM Plex Serif', serif;
+  font-weight: bolder;
+  font-size: 18px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  color: magenta;
 }
-
+/*
 .nav-list-link {
   padding-bottom: .15em;
   border-bottom: .2em solid transparent;
 }
 
 .nav-list-link:hover {
-  border-bottom: .2em solid #9e1900;
+  border-bottom: .2em solid rgb(255, 31, 236);
   padding-bottom: .15em;
-  transition: 150ms ease-in-out;
-}
+  transition: 15ms ease-out;
+} */
 
 code {
   padding: .2em .4em;
@@ -166,8 +193,9 @@ header .nav-list-item a {
 }
 
 .home.post-list {
-  margin: 2em 0;
+  margin: 1.5em 0;
   list-style: none;
+  font-family: 'Source Code Pro', monospace, 'Castoro', serif !important;
 }
 .home.post-list .post-list-item {
   padding: 1em .4em;
@@ -180,12 +208,25 @@ header .nav-list-item a {
 .home.post-list .post-content h6:before {
   content: "";
 }
+
+.post-content p {
+  font-size: 20px;
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  line-height: 1.6em;
+  color: #454545;
+}
 .home.post-list .post-content > ul {
   list-style: initial;
 }
 
+.home.post-info{
+  font-family: 'Source Code Pro', monospace;
+}
+
 .home.post-list .read-more {
-  color: #9e1900;
+  color: navy;
+  font-family: 'Source Code Pro', monospace, 'Castoro', serif !important;
 }
 
 .archive .post-item {
@@ -198,17 +239,18 @@ header .nav-list-item a {
   font-size: 1rem;
 }
 .archive .post-title-link {
-  color: #9e1900;
+  color: rgb(20, 18, 139);
   padding-left: 1em;
 }
 .archive .post-title-link:hover {
   border-bottom: 0;
-  color: #801501;
+  color: black;
 }
 .archive .post-info {
   width: 6em;
   font-size: .9em;
   color: #393e46;
+  font-family: 'Source Code Pro', monospace;
 }
 
 .post {
@@ -216,12 +258,13 @@ header .nav-list-item a {
 }
 
 .post-block .post-title {
-  margin: .65em 0;
+  margin: .1em 0;
   font-size: 1.5em;
 }
 .post-block .post-info {
   color: #393e46;
-  margin: 1.2em 0;
+  margin: .1em 0;
+  font-family: 'Source Code Pro', monospace;
 }
 .post-block .post-info span {
   margin-left: .5rem;
@@ -264,8 +307,9 @@ header .nav-list-item a {
 
 .post-content h1,
 .post-block .post-title {
-  margin-top: 2em;
+  margin-top: .5em;
   font-size: 3em;
+  font-family: 'IBM Plex Serif', serif;
 }
 
 .post-content h2 {
@@ -294,7 +338,8 @@ header .nav-list-item a {
 }
 
 .post-content a {
-  color: #9e1900;
+  color: navy;
+  text-decoration: underline;
 }
 .post-content blockquote {
   margin: 2em 0;
@@ -370,18 +415,19 @@ header .nav-list-item a {
 .paginator .prev,
 .paginator .next {
   position: relative;
-  box-shadow: 0 .3em #801501;
+  box-shadow: 0 .2em #fff;
   display: inline-block;
   margin: 0 .2em;
   padding: .3em 1.5em;
   border-radius: 5px;
   color: #fff;
-  background-color: #9e1900;
+  background-color: #000;
   font-weight: 600;
+  font-family: "Source Code Pro" !important;
 }
 .paginator .prev:hover,
 .paginator .next:hover {
-  box-shadow: 0 .2em #801501;
+  box-shadow: 0 .1em #fff;
   top: .1em;
 }
 
@@ -391,8 +437,10 @@ header .nav-list-item a {
 }
 
 main.container {
-  margin: 2em .7em;
-  min-height: 30vh;
+  border-top: 4px solid navy;
+  border-width: 100%;
+  margin: -30px .7em;
+  /* min-height: 10vh; */
 }
 
 @media screen and (max-width: 700px) {
@@ -413,6 +461,9 @@ footer .copyright {
   border-top: 1px solid #eee;
   text-align: center;
 }
+footer .copyright a {
+  color: navy !important;
+}
 footer .copyright p,
 footer .copyright a {
   padding: 1em 0;
@@ -420,7 +471,7 @@ footer .copyright a {
   font-weight: 300;
 }
 footer .copyright a:hover {
-  color: #393e46;
+  color: rgb(73, 73, 219);
 }
 
 code,
