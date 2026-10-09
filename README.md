@@ -32,7 +32,7 @@
   <li><a href="#install">Install</a></li>
   <li><a href="#usage">Usage</a></li>
   <li><a href="#update">Update</a></li>
-  <li><a href="#contribute">Contribute</a></li>
+  <li><a href="#contributing">Contribute</a></li>
   <li><a href="#license">License</a></li>
 </details>
 
